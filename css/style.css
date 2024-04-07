@@ -1,0 +1,133 @@
+body, html{
+    height:100%;
+    margin:0;
+    font-size:18px;
+    font-family:"Lato", sans-serif;
+    font-weight:normal;
+    line-height: 0.8cm;
+    color:#666;
+}
+
+/*menu nav ini*/
+.navbar {
+  width: 100%;
+  background-color:#3a3a3a;
+  opacity:0.7;
+  overflow: auto;
+  position: fixed;
+  z-index: 1;
+}
+
+.navbar a {
+  float: left;
+  padding: 12px;
+  color:#fff;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background-color: #000;
+  border-bottom: 2px solid #fff;
+}
+
+.navbar a.dividir {
+  float: right;
+  color:#fff;
+}
+/*menu nav fim*/
+
+.primeiraImagem, .segundaImagem, .terceiraImagem, .quartaImagem{
+  position:relative;
+  background-position:center;
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+}
+  
+.primeiraImagem{
+  background-image:url('../assets/img/img01.jpeg');
+  min-height:100%;
+}
+  
+.segundaImagem{
+  background-image:url('../assets/img/img02.jpeg');
+  min-height:460px;
+}
+  
+.terceiraImagem{
+  background-image:url('../assets/img/img03.jpeg');
+  min-height:460px;
+}
+  
+.quartaImagem{
+  background-image:url('../assets/img/img04.jpeg');
+  min-height:460px;
+}
+  
+.secao{
+  text-align:center;
+  padding:20px 60px;
+}
+  
+.secaoClara{
+  background-color:#f4f4f4;
+  color:#666;
+}
+  
+.secaoEscura{
+  background-color:#282e34;
+  color:#ddd;
+}
+
+.great-vibes-regular {
+  font-family: "Great Vibes", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+  
+.texto{
+  position:absolute;
+  top:50%;
+  width:100%;
+  text-align:center;
+  color:#000;
+  font-size:27px;
+  letter-spacing:8px;
+  text-transform:uppercase;
+  opacity:0.70;
+}
+ 
+.rotulo{
+  background-color:#111;
+  color:#fff;
+  padding:20px;
+}
+
+#irParaTopo {
+  padding: 10px;
+  background: none;
+  float: right;
+  border-radius: 10%; 
+  position: absolute; 
+  bottom: 10px;
+  right: 10px;
+}
+
+#imagemSeta{
+  width: 35px;
+  height: 35px;
+}
+
+
+@media(max-width:568px){
+  .primeiraImagem, .segundaImagem, .terceiraImagem, .quartaImagem{
+    background-attachment:scroll;
+  }
+
+  .navbar a{
+    float: none;
+    display: block;
+  }
+}
